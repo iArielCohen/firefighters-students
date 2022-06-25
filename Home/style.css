@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f0f0;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(10px);
+}
+
+.main-img {
+  height: 150px;
+  width: 150px;
+}
+
+.header {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #c12941;
+}
+
+/* */
+
+.subjects-cards {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  gap: 30px;
+}
+
+.card {
+  height: 200px;
+  height: 300px;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.card:nth-child(1) {
+  background: url("https://cdn.pixabay.com/photo/2013/06/02/23/13/firefighters-115800_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card:nth-child(2) {
+  background: url("https://cdn.pixabay.com/photo/2012/10/10/10/31/fire-60576_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card button {
+  height: 50px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #f5f6f7;
+}

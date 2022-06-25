@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="img">
+        <img class="main-img" src="../FireDepIsrael.svg" alt="Fire Department Israel">
+    </div>
+    <div class="header">
+        <h2>מה נלמד היום ?</h2>
+    </div>
+
+    <div class="subjects-cards">
+        <div class="card">
+            <h3>חזרה על נושאים</h3>
+            <button><a href="../Subjects/subjects.html">לחץ כאן</a></button>
+        </div>
+        <div class="card">
+            <h3>חזרה על מבחנים</h3>
+            <button><a href="../Tests-select/tests.html">לחץ כאן</a></button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 700,
+            delay: 300
+        });
+    </script>
+</body>
+
+</html>

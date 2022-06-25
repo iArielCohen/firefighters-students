@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f0f0;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.main-img {
+  height: 150px;
+  width: 150px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(10px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #c12941;
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #333;
+  border-radius: 15px;
+  height: 600px;
+  width: 340px;
+  box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.phone .content {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+
+.phone .content-about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone .content-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone .content-test h2 {
+  font-size: 3rem;
+  color: #c12941;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+}
+
+nav li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in;
+}
+
+nav li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+nav ul li:hover,
+nav ul li.active {
+  color: #c12941;
+}
