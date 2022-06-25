@@ -23,5 +23,5 @@ function hideAllItems() {
 }
 
 toTest.addEventListener('click', () => {
-    window.open("../Test/Test1/index.html")
+    window.open("../Test/Test1/quiz.html")
 })
