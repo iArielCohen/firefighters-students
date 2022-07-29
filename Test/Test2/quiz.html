@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='quiz_container'></div>
+
+    <script>
+        var _0x30e8 = ['INPUT', 'setAttribute', 'inner-container', 'createElement', '\x20correct', '0.000001px',
+            'style',
+            'question\x20disabled\x20showAll', 'option\x20option', 'call', 'center', 'getElementById',
+            'question\x20disabled', 'questionContainer', 'nextBtn', '\x20מתוך\x20', 'srcElement',
+            '</div><br/><div>',
+            'className', 'question\x20enabled', '<div><div><b>ציון:</b></div><br/><div>',
+            'This\x20quiz\x20has\x20been\x20created\x20using\x20the\x20tool\x20<a\x20target=\x27_blank\x27\x20href=\x27https://www.htmlcodegenerator-tools.com/2019/10/html-javascript-quiz-generator-score-timer.html\x27>HTML\x20Quiz\x20Generator</a>',
+            'object', 'remove', 'parentElement', 'הראה\x20תשובות', 'indexOf', 'div', 'showAnswersBtn',
+            'hasOwnProperty', 'lastChild', 'right', 'getElementsByClassName', 'question_name', 'score', 'enabled',
+            'Quiz', '<span\x20class=\x27right\x27>&#10004;</span><span\x20class=\x27wrong\x27>X</span>',
+            'showResetBtn', 'next', 'quiz-report', 'options', 'myLink', 'currentQuestion', 'value', 'question',
+            'bind', 'נסה\x20שוב', 'button', 'event', 'option', 'appendChild', 'target', 'elementId', 'none',
+            'textAlign', 'addEventListener', 'quizQuestions', 'innerHTML', 'block', 'innerContainer',
+            'question_number', 'length', 'display', 'type', 'click'
+        ];
+        (function (_0x286d19, _0x30e82a) {
+            var _0x9e26e6 = function (_0x15fa70) {
+                while (--_0x15fa70) {
+                    _0x286d19['push'](_0x286d19['shift']());
+                }
+            };
+            _0x9e26e6(++_0x30e82a);
+        }(_0x30e8, 0x10d));
+        var _0x9e26 = function (_0x286d19, _0x30e82a) {
+            _0x286d19 = _0x286d19 - 0x0;
+            var _0x9e26e6 = _0x30e8[_0x286d19];
+            return _0x9e26e6;
+        };
+        (function () {
+            function _0x199599() {
+                var _0x3b4b83 = document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);
+                this['questionContainer'] = document['createElement'](_0x9e26('0x16')), this['questionContainer'][
+                        _0x9e26('0xd')
+                    ] = 'question-container', this[_0x9e26('0x37')] = document[_0x9e26('0x40')](_0x9e26('0x16')),
+                    this[_0x9e26('0x37')][_0x9e26('0xd')] = _0x9e26('0x3f'), _0x3b4b83['appendChild'](this[_0x9e26(
+                        '0x8')]), this[_0x9e26('0x8')][_0x9e26('0x2e')](this[_0x9e26('0x37')]);
+                for (var _0x535939 = 0x0; _0x535939 < this[_0x9e26('0x24')][_0x9e26('0x34')][
+                        'length'
+                    ]; _0x535939++) {
+                    var _0x3dd27d = document['createElement']('div');
+                    _0x3dd27d[_0x9e26('0xd')] = _0x9e26('0xe'), this[_0x9e26('0x37')][_0x9e26('0x2e')](_0x3dd27d),
+                        _0x535939 != this[_0x9e26('0x26')] && (_0x3dd27d['style'][_0x9e26('0x3a')] = _0x9e26(
+                            '0x31'));
+                    var _0x81142 = document[_0x9e26('0x40')](_0x9e26('0x16'));
+                    _0x81142[_0x9e26('0xd')] = _0x9e26('0x38'), _0x81142[_0x9e26('0x35')] = _0x535939 + 0x1 + '/' +
+                        this['options'][_0x9e26('0x34')][_0x9e26('0x39')], _0x3dd27d[_0x9e26('0x2e')](_0x81142);
+                    var _0x13c728 = document[_0x9e26('0x40')](_0x9e26('0x16'));
+                    _0x13c728['className'] = _0x9e26('0x1c'), _0x13c728['innerHTML'] = this[_0x9e26('0x24')][
+                        _0x9e26('0x34')
+                    ][_0x535939][_0x9e26('0x28')], _0x3dd27d[_0x9e26('0x2e')](_0x13c728);
+                    var _0x4722a4 = document[_0x9e26('0x40')](_0x9e26('0x16'));
+                    _0x4722a4[_0x9e26('0xd')] = _0x9e26('0x24'), _0x3dd27d[_0x9e26('0x2e')](_0x4722a4);
+                    for (var _0x28c409 = 0x0; _0x28c409 < this['options']['quizQuestions'][_0x535939]['options'][
+                            _0x9e26('0x39')
+                        ]; _0x28c409++) {
+                        var _0x4cca80 = document[_0x9e26('0x40')](_0x9e26('0x16'));
+                        _0x4cca80[_0x9e26('0xd')] = 'option\x20option' + _0x535939 + _0x28c409, _0x4cca80[_0x9e26(
+                            '0x35')] = this[_0x9e26('0x24')][_0x9e26('0x34')][_0x535939][_0x9e26('0x24')][
+                            _0x28c409
+                        ][_0x9e26('0x27')] + _0x9e26('0x20'), _0x4722a4[_0x9e26('0x2e')](_0x4cca80), _0x4cca80[
+                            _0x9e26('0x33')]('click', _0x14c511['bind'](this, _0x535939, _0x28c409));
+                    }
+                    var _0x4ca056 = document[_0x9e26('0x40')](_0x9e26('0x16'));
+                    _0x4ca056[_0x9e26('0xd')] = _0x9e26('0x22');
+                    var _0x4cc6a7 = document[_0x9e26('0x40')]('INPUT');
+                    _0x4cc6a7[_0x9e26('0x3e')](_0x9e26('0x3b'), _0x9e26('0x2b')), _0x4cc6a7[_0x9e26('0x3e')](
+                        _0x9e26('0x27'), 'הבא'), _0x4cc6a7[_0x9e26('0xd')] = _0x9e26('0x9'), _0x4ca056[_0x9e26(
+                        '0x2e')](_0x4cc6a7), _0x3dd27d[_0x9e26('0x2e')](_0x4ca056), _0x4cc6a7[_0x9e26('0x33')](
+                        _0x9e26('0x3c'), _0x55841d[_0x9e26('0x29')](this));
+                }
+                var _0x4b290c = document[_0x9e26('0x40')](_0x9e26('0x16'));
+                _0x4b290c['id'] = _0x9e26('0x23'), _0x4b290c['style'][_0x9e26('0x32')] = _0x9e26('0x5'), this[
+                        _0x9e26('0x37')][_0x9e26('0x2e')](_0x4b290c),
+                    function () {
+                        var _0x4244cc = document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);
+                        this[_0x9e26('0x25')] = document[_0x9e26('0x40')](_0x9e26('0x16')), this[_0x9e26('0x25')][
+                                'style'
+                            ]['fontSize'] = _0x9e26('0x0'), this[_0x9e26('0x25')][_0x9e26('0x1')][_0x9e26('0x32')] =
+                            _0x9e26('0x5'), this[_0x9e26('0x25')][_0x9e26('0x35')] = _0x9e26('0x10'), _0x4244cc[
+                                _0x9e26('0x2e')](this[_0x9e26('0x25')]);
+                    } [_0x9e26('0x4')](this),
+                    function () {
+                        var _0x22373e = document[_0x9e26('0x6')](this[_0x9e26('0x24')][_0x9e26('0x30')]);
+                        _0x22373e[_0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')] <= 0xbe && 0xb4 <= _0x22373e[
+                            _0x9e26('0x19')][_0x9e26('0x35')][_0x9e26('0x39')] || _0x22373e[_0x9e26('0x12')]();
+                    } [_0x9e26('0x4')](this);
+            }
+
+            function _0x14c511(_0x364928, _0x1925ff) {
+                var _0x1c0550 = _0x1c0550 || window[_0x9e26('0x2c')];
+                if (-0x1 != (_0x1c0550[_0x9e26('0x2f')] || _0x1c0550['srcElement'])[_0x9e26('0x13')][_0x9e26(
+                        '0x13')][_0x9e26('0xd')][_0x9e26('0x15')](_0x9e26('0x1e'))) {
+                    for (var _0x13e903 = document['getElementsByClassName'](_0x9e26('0x28')), _0x17a407 =
+                            0x0; _0x17a407 < _0x13e903[_0x9e26('0x39')]; _0x17a407++) _0x17a407 == _0x364928 && (
+                        _0x13e903[_0x364928][_0x9e26('0xd')] = _0x9e26('0x7'));
+                    for (_0x17a407 = 0x0; _0x17a407 < this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][
+                            _0x9e26('0x39')
+                        ]; _0x17a407++) {
+                        if (_0x17a407 == _0x1925ff)
+                            if (this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928]['options'][_0x1925ff][_0x9e26(
+                                    '0x1a')])(_0x13e903 = document['getElementsByClassName']('option' + _0x364928 +
+                                    _0x1925ff))[0x0][_0x9e26('0xd')] = _0x9e26('0x3') + _0x364928 + _0x1925ff +
+                                _0x9e26('0x41'), this[_0x9e26('0x1d')]++;
+                            else(_0x13e903 = document[_0x9e26('0x1b')](_0x9e26('0x2d') + _0x364928 + _0x1925ff))[
+                                0x0][_0x9e26('0xd')] = _0x9e26('0x3') + _0x364928 + _0x1925ff + '\x20incorrect';
+                        else if (this[_0x9e26('0x24')][_0x9e26('0x34')][_0x364928][_0x9e26('0x24')][_0x17a407][
+                                _0x9e26('0x1a')
+                            ])(_0x13e903 = document[_0x9e26('0x1b')](_0x9e26('0x2d') + _0x364928 + _0x17a407))[0x0][
+                            _0x9e26('0xd')
+                        ] = _0x9e26('0x3') + _0x364928 + _0x17a407 + _0x9e26('0x41');
+                    }
+                }
+            }
+
+            function _0x55841d() {
+                var _0x44e42a = _0x44e42a || window[_0x9e26('0x2c')];
+                if (-0x1 != (_0x44e42a[_0x9e26('0x2f')] || _0x44e42a[_0x9e26('0xb')])['parentElement'][_0x9e26(
+                        '0x13')]['className']['indexOf']('disabled')) {
+                    this[_0x9e26('0x26')]++;
+                    for (var _0x4023e4 = document['getElementsByClassName'](_0x9e26('0x28')), _0x3c6c2a =
+                            0x0; _0x3c6c2a < _0x4023e4[_0x9e26('0x39')]; _0x3c6c2a++) _0x3c6c2a == this[
+                        'currentQuestion'] ? _0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26(
+                        '0x36') : _0x4023e4[_0x3c6c2a][_0x9e26('0x1')][_0x9e26('0x3a')] = 'none';
+                    this[_0x9e26('0x24')][_0x9e26('0x34')][_0x9e26('0x39')] == this[_0x9e26('0x26')] &&
+                        function () {
+                            var _0x522412 = document[_0x9e26('0x6')](_0x9e26('0x23'));
+                            if (_0x522412[_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x36'), _0x522412[_0x9e26(
+                                    '0x35')] = _0x9e26('0xf') + this[_0x9e26('0x1d')] + _0x9e26('0xa') + this[
+                                    'options'][_0x9e26('0x34')][_0x9e26('0x39')] + _0x9e26('0xc') + parseInt(this[
+                                    _0x9e26('0x1d')] / this['options'][_0x9e26('0x34')][_0x9e26('0x39')] * 0x64) +
+                                '%</div></div>', this[_0x9e26('0x24')][_0x9e26('0x17')]) {
+                                var _0x2ea20c = document[_0x9e26('0x40')]('INPUT');
+                                _0x2ea20c[_0x9e26('0x3e')](_0x9e26('0x3b'), _0x9e26('0x2b')), _0x2ea20c[_0x9e26(
+                                        '0x3e')]('value', _0x9e26('0x14')), _0x522412[_0x9e26('0x2e')](_0x2ea20c),
+                                    _0x2ea20c[_0x9e26('0x33')](_0x9e26('0x3c'), function () {
+                                        for (var _0x3afb67 = document[_0x9e26('0x1b')]('question'), _0xbc6abe =
+                                                0x0; _0xbc6abe < _0x3afb67[_0x9e26('0x39')]; _0xbc6abe++)
+                                            _0x3afb67[_0xbc6abe][_0x9e26('0xd')] = _0x9e26('0x2');
+                                        for (_0x3afb67 = document[_0x9e26('0x1b')](_0x9e26('0x22')), _0xbc6abe =
+                                            0x0; _0xbc6abe < _0x3afb67[_0x9e26('0x39')]; _0xbc6abe++) _0x3afb67[
+                                            _0xbc6abe][_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x31');
+                                    } ['bind'](this));
+                            }
+                            if (this[_0x9e26('0x24')][_0x9e26('0x21')]) {
+                                var _0x2fbad3 = document[_0x9e26('0x40')](_0x9e26('0x3d'));
+                                _0x2fbad3[_0x9e26('0x3e')](_0x9e26('0x3b'), _0x9e26('0x2b')), _0x2fbad3[_0x9e26(
+                                    '0x3e')](_0x9e26('0x27'), _0x9e26('0x2a')), _0x522412['appendChild'](
+                                    _0x2fbad3), _0x2fbad3[_0x9e26('0x33')]('click', function () {
+                                    for (var _0x3d8c0a = document[_0x9e26('0x1b')](_0x9e26('0x28')),
+                                            _0x345f4a = 0x0; _0x345f4a < _0x3d8c0a['length']; _0x345f4a++)
+                                        _0x3d8c0a[_0x345f4a][_0x9e26('0xd')] = _0x9e26('0xe'), _0x3d8c0a[
+                                            _0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')] = 'none', 0x0 ==
+                                        _0x345f4a && (_0x3d8c0a[_0x345f4a][_0x9e26('0x1')]['display'] =
+                                            _0x9e26('0x36'));
+                                    for (_0x3d8c0a = document[_0x9e26('0x1b')](_0x9e26('0x22')), _0x345f4a =
+                                        0x0; _0x345f4a < _0x3d8c0a[_0x9e26('0x39')]; _0x345f4a++) _0x3d8c0a[
+                                        _0x345f4a][_0x9e26('0x1')][_0x9e26('0x3a')] = _0x9e26('0x36');
+                                    this[_0x9e26('0x26')] = 0x0, this[_0x9e26('0x1d')] = 0x0, document[
+                                            _0x9e26('0x6')](_0x9e26('0x23'))[_0x9e26('0x1')][_0x9e26(
+                                            '0x3a')] = _0x9e26('0x31'), document[_0x9e26('0x6')](this[
+                                            _0x9e26('0x24')][_0x9e26('0x30')])[_0x9e26('0x35')] = '',
+                                        _0x199599[_0x9e26('0x4')](this);
+                                } [_0x9e26('0x29')](this));
+                            }
+                        } [_0x9e26('0x4')](this);
+                }
+            }
+            this[_0x9e26('0x1f')] = function () {
+                this['score'] = 0x0;
+                arguments[this['currentQuestion'] = 0x0] && _0x9e26('0x11') == typeof arguments[0x0] && (this[
+                    _0x9e26('0x24')] = function (_0x427faf, _0x1c6308) {
+                    var _0x3daaf6;
+                    for (_0x3daaf6 in _0x1c6308) _0x1c6308[_0x9e26('0x18')](_0x3daaf6) && (_0x427faf[
+                        _0x3daaf6] = _0x1c6308[_0x3daaf6]);
+                    return _0x427faf;
+                }({
+                    'quizQuestions': {},
+                    'elementId': '',
+                    'showAnswersBtn': !0x0,
+                    'showTimer': !0x0
+                }, arguments[0x0])), _0x199599[_0x9e26('0x4')](this);
+            };
+        }());
+        var data = [{
+            "type": "radio",
+            "question": "בחר את ההסבר הנכון ביותר לתיאור מצב של בקרת דלק",
+            "explanation": "",
+            "options": [{
+                "value": "פיצוץ כתוצאה מחדירה פתאומית של כמות חמן גדולה לחלל השריםה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "נק' שבה כל החומרים הגלויים לעין בחלל נדלקים בעת ובעונה אחת ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "שכבת גז חם המתפתחת בתקרת החדר וגורמת לקרינת חום על החומרים הדליקים בחלל",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מצב שבו כמות חומרי הדלק סוגם ומיקומם בחלל מכתיב את קצת התפתחות האש",
+                "right": true,
+                "selected": false
+            }],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהו חום כמוס ?",
+            "explanation": "",
+            "options": [{
+                "value": "כמות החום הדרושה לשינוי מצב טמפרטורה ב700 מעלות חום",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "ב4 מעלות המים צפופים יותר ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כמות החום הדרושה לשינוי מצב צבירה של חומר ללא שינוי בטמפרטורה",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "חימום ליטר אחד של מים במעלה אחת ",
+                "right": false,
+                "selected": false
+            }],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מה אינו חלק מהמשאבה ?",
+            "explanation": "",
+            "options": [{
+                "value": "מסבים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "חילזון ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "אטמים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מאיצים ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מסנן ",
+                "right": true,
+                "selected": false
+            }],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מה נבדוק בטיפול יומי ?  סמן את הנכון ביותר",
+            "explanation": "",
+            "options": [{
+                "value": "מערכת קפיצים, בדיקת מים מזוקקים, מערכת המנ''פ, כננת חשמלית, תכולת הציוד",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מערכת השלדה, מערכת מתלים, מערכת קפיצים, בדיקת ברגים כללית ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "בדיקה ויזואלית של הרכב, בדיקת רישיון נהיגה, תאורה מהבהבים וקשר, תכולת ציוד",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "לחץ אוויר בגלגלים, בדיקת מצבר חשמלי ונקיונו, בדיקת מים מזוקקים, מגבים ומתיז מים ",
+                "right": false,
+                "selected": false
+            }],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהן התכונות הנדרשות מקצף ?",
+            "explanation": "",
+            "options": [{
+                "value": "כיסוי טוב של השטח הבוער, עמידות בחום, השתלבות עם אבקה, שיעור יישום נמוך",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "ניפוח, עמידות, השתלבות עם מים ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "השתלבות עם אבקה, שיעור יישום נמוך, עמידות לגזים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "השתלבות עם מים, השתלבות עם אוויר, שיעור יישום נמוך, עמידות בחום ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "סמן את התשובה הנכונה",
+            "explanation": "",
+            "options": [{
+                "value": "כאשר מים יורדים מגובה של 10 מ' נרוויח 1 אטמ'",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כל התשובות נכונות ",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "כשנעביר מים בשטח מישורי למרחק של 100 מ' נפסיד 1 אטמ'",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כאשר נעלה מים לגובה 10 מ' נפסיד 1 אטמ' ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהו יחס ההצבה הנכון בסולם שחיל ?",
+            "explanation": "",
+            "options": [{
+                "value": "3.5 מטר : 1.25 ס''מ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "1 מטר : 25 ס''מ ",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "תלוי במספר השלבים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "1 מטר : 0.025 ס''מ ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהן שיטות הסלנת הקצף בשריפות נוזלים ?",
+            "explanation": "",
+            "options": [{
+                "value": "גלגול, מפל, טיפות",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "גלגול, סכר, גשם",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "טיפוס, לחץ, סילון",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "רסס, סילון, ערפל ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהם החלקים העיקריים מהם מורכב הסולם שחיל ?",
+            "explanation": "",
+            "options": [{
+                "value": "חלק נייד, חלק נייח, חלק נשלף",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "חלק נשלף, חלק נייח, מערכת רווח כוח",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מערכת גלגלת וחבל, חלק נייח, חלק נשלף",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מערכת גלגלת וחבל, חלק נייד, חלק נייח ",
+                "right": true,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהו עיקרון הצבעים במשאבה צנטריפוגלית ?",
+            "explanation": "",
+            "options": [{
+                "value": "כחול - לחץ גבוה, ירוק - לחץ רגיל, סגול - ריקון מים, צהוב - שליטה בתאורה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כחול - מערכת קצף, כתום - שאיבה, ירוק - לחץ רגיל, אדום - אזהרה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כחול - לחץ משולב, ירוק - לחץ רגיל, סגול - לחץ גבוה, צהוב - מערכת קצף",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "כחול - לחץ רגיל, ירוק - יניקה, סגול - לחץ גבוה, צהוב - מערכת קצף ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "פרט את אופן פעולת קצף CLASS B בשריפות נוזלים",
+            "explanation": "",
+            "options": [{
+                "value": "מוריד את החום, מערפל. מפסיק את העשן",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "משניק, מבודד, מקרר",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "כיבוי, עישון, בידוד",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "תשובות A+B נכונות ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהו משקל סגולי ?",
+            "explanation": "",
+            "options": [{
+                "value": "כמות המסה והצפיפות ביחידת נפח אחת בהשוואה למים בנפח נתון",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "יחידת מידה המתארת מולקולות בחומר הדוקות זו לזו",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "משקל בצבע סגול 😜",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "נוזלים עם משקל סגולי קל מהמים ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "סמן את התשובה הנכונה בהתייחס לגובה מנופים :",
+            "explanation": "",
+            "options": [{
+                "value": "עיט - 37 מ', דקל - 42/43/44 מ', אלון - 26 מ'",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "געש - 12 מ', נץ - 37 מ', רותם - 44 מ'",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "נשר - 43/46/49 מ', נץ - 27 מ', סנפיר - 23 מ'",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "דקל - 29 מ', נשר - 42/44/46 מ', נץ - 37 מ' ",
+                "right": true,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "כלי חילוץ - חלקי המערכת - סמן את הנכון :",
+            "explanation": "",
+            "options": [{
+                "value": "מפשק, רם, יחידת מנוע, חותך, צנרת הידראולית",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "יחידת מנוע, מפשק, חותך, מערבל, תומך רם",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "רם, בוכנת חילוץ, תומך פישוק, שרשראות חילוץ",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מפשק, מגשר, צנרת לחץ אוויר, כנרת ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהם הגורמים העיקריים המשפיעים על התנהגות שריפות שדה ויער ?",
+            "explanation": "",
+            "options": [{
+                "value": "מפנה דרומי, חום, קיץ/חורף, מדרון/גבעה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מפנה מערבי, טמפרטורה, יום/לילה, שבילי בידוד",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כיוון הרוח, גודל השטח במ''ר, כתמי אש, אדמה יבשה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "טופוגרפיה, מזג אוויר, סוג חומר הדלק ",
+                "right": true,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "קיימות 4 שיטות וטקטיקות כיבוי בשריפות שדה ויער, מהן 4 השיטות ?",
+            "explanation": "",
+            "options": [{
+                "value": "תקיפה ישירה, תקיפה עקיפה, אש נגדית, תקיפה באגפים",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "תקיפה עקיפה, תקיפה באגפים, תקיפה מגננת, תקיפת חצרות",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "תקיפה ראשונית, תקיפה משנית, תקיפה עקיפה, תקיפה באגפים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "תקיפה באגפים, תקיפה ישירה, תקיפה משנית, אי תקיפה ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהן יכולות המצלמה הטרמית ?",
+            "explanation": "",
+            "options": [{
+                "value": "צילום, זיהוי לכודים, נזילות בצנרות, מדידת נפח",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "זיהוי נזילות, זיהוי סביבה נפיצה, זיהוי לכודים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "מדידת טמפרטורה, תאורה וציין לייזר, צרצר מצוקה, זיהוי סביבה נפיצה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "זיהוי לכודים, מדידת טמפרטורה, תאורה, ציין לייזר וצילום ",
+                "right": true,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "מהם תפקידי המפלג ?",
+            "explanation": "",
+            "options": [{
+                "value": "קירוב שליטה על המים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "שחרור לחץ מים",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "כל התשובות נכונות",
+                "right": true,
+                "selected": false
+            }, {
+                "value": "פיצול קווים ",
+                "right": false,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "האם ניתן לעבוד ולהוציא קצף בצורה מוגמרת באספקה ישירה ?",
+            "explanation": "",
+            "options": [{
+                "value": "ניתן לעבוד באספקה ישירה רק בלחץ גבוה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "עבודה עם קצף תעשה אך ורק כאשר המשאבה באספקה ישירה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "ניתן לעבוד",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "לא ניתן  ",
+                "right": true,
+                "selected": false
+            }, ],
+            "selected": null
+        }, {
+            "type": "radio",
+            "question": "בעזרת כל הציוד העומד לרשותך ברכב, איך כן ניתן לקבל קצף במזנק כאשר הרכב עובד באספקה ישירה ?",
+            "explanation": "",
+            "options": [{
+                "value": "בעזרת דוחף עשן לדחיסת אוויר בקו",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "לא ניתן בשום צורה",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "בעזרת יניקה ממקור גבוה שלא יפחת מ1.5 מ'",
+                "right": false,
+                "selected": false
+            }, {
+                "value": "שימוש במיכל חיצוני ומערבל קו ",
+                "right": true,
+                "selected": false
+            }, ],
+            "selected": null
+        }, ];
+        var quiz = new Quiz({
+            quizQuestions: data,
+            elementId: 'quiz_container',
+            showAnswersBtn: true,
+            showResetBtn: true
+        });
+    </script>
+</body>
+
+</html>
