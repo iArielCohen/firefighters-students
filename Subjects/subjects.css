@@ -32,7 +32,36 @@ body {
   color: #c12941;
 }
 
-.header span {
-  margin-top: 40px;
+.subjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.box h2 {
+  font-size: 3rem;
+  color: #f5f6f7;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 5px 10px #0d0d0d;
+}
+
+.box1 {
+  background: url("https://images.unsplash.com/photo-1531431199010-1f9985f83baa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
